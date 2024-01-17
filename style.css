@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+}
+.nav-left{
+    flex-grow: 2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 12px;
+}
+.nav-center{
+    flex-grow: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-right{
+    flex-grow: 2;
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+    column-gap: 12px;
+}
+a{
+    color: #646464;
+} 
+
+.yticon{
+    margin-left: 10px;
+    height: 38px;
+    width: 50px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form input, button{
+    height: 34px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+form input{
+    width: 40vw;
+    padding-left: 10px;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 20px;
+}
+form button{
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* Mian Container */
+
+
+.main-container{
+    position: relative;
+    top: 70px;
+    display: flex;
+    overflow: hidden;
+    height: calc(100vh - 70px);
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 200px;
+    padding: 10px;
+}
+.aside a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+.aside a:hover{
+    border-radius: 8px;
+    background-color: #afafaf6c;
+}
+
+.aside::-webkit-scrollbar{
+    display: none;
+}
+.section{
+    padding: 10px; 
+    width: 80vw;
+    overflow-y: scroll;
+}
+.vid-panel{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.vid-box{
+    padding: 10px;
+   width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.thumb img{
+    width: 100%;
+    border-radius: 10px;
+}
+.desc-panel{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.channel img{
+    height: 50px;
+}
